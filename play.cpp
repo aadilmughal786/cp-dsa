@@ -52,7 +52,7 @@ void solve() {
 
   uSet.insert(12);
   uSet.insert(1212);
-  uSet.insert(134342);
+  uSet.insert(14342);
   uSet.insert(1216212);
   uSet.insert(1212);
   uSet.insert(212);

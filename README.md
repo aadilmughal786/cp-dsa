@@ -4,6 +4,14 @@
 
 [![The Real Programmer](./images/programming-computer.gif "The Real Programmer")](https://aadilmughal786.github.io/portfolio/code/ "The Real Programmer")
 
+### These vs-code extension can be very handy in your problem solving journey
+
+### 🠒 [Local Snippet](https://marketplace.visualstudio.com/items?itemName=devonray.snippet "Local Snippet")
+
+### 🠒 [Cp Helper](https://marketplace.visualstudio.com/items?itemName=km.competitive-coding-helper "Cp Helper")
+
+</br>
+
 <pre>
 ████████▄     ▄████████    ▄████████ 
 ███   ▀███   ███    ███   ███    ███ 

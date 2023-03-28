@@ -1,2 +1,3 @@
-# cp-dsa
-Competitive-Coding-Library for my personal use
+## 💥 Coding Snippets Library in C++
+
+### website-link : https://aadilmughal786.github.io/portfolio/code/

@@ -1,1 +1,5 @@
+# Ignore compiled executable file
 a.out
+
+# Ignore hidden files and directories
+.*

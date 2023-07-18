@@ -54,7 +54,7 @@ void solve() {
   uSet.insert(1212);
   uSet.insert(134342);
   uSet.insert(1216212);
-  uSet.insert(12612);
+  uSet.insert(1212);
   uSet.insert(212);
 
   for (ll ele : uSet) {

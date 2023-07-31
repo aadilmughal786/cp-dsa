@@ -55,7 +55,7 @@ void solve() {
   uSet.insert(134342);
   uSet.insert(121676212);
   uSet.insert(12612);
-  uSet.insert(120001212);
+  uSet.insert(0001212);
 
   for (ll ele : uSet) {
     cout << ele << endl;

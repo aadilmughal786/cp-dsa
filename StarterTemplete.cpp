@@ -20,6 +20,14 @@
 using namespace std;
 void solve();
 
+//  OUTPUT
+
+//---------------------------------------
+
+//  INPUT
+
+//---------------------------------------
+
 // write your code declaration/defination
 
 //---------------------------------------
@@ -34,4 +42,5 @@ int main() {
   return 0;
 }
 
+// Let's start
 void solve() {}

@@ -20,13 +20,14 @@
 using namespace std;
 void solve();
 
+//  INPUT
+
+//---------------------------------------
+
 //  OUTPUT
 
 //---------------------------------------
 
-//  INPUT
-
-//---------------------------------------
 
 // write your code declaration/defination
 

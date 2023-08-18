@@ -50,5 +50,5 @@ void solve() {
   ll a, b;
   cin >> a >> b;
   cout << "lcm(" << a << "," << b << ")"
-       << " : " << lcm(a, b) << endl;
+       << " = " << lcm(a, b) << endl;
 }

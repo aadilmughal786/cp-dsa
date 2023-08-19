@@ -1,0 +1,32 @@
+---[ def ]---
+
+An unordered set is a collection of unique elements, and it does not maintain any specific order among its elements.
+
+---[ header ]---
+
+#include <unordered_set>
+
+---[ creation ]---
+
+std::unordered_set<int> uSet;
+
+---[ Inserting element ]---
+    
+uSet.insert(element);
+
+---[ Iterating through the set ]---
+
+for (int element : uSet) {
+    std::cout << element << " ";
+}
+
+
+---[ Finding an element ]---
+
+auto iter = uSet.find(element);
+if (iter != uSet.end()) {
+    std::cout << "Element found." << std::endl;
+} else {
+    std::cout << "Element not found." << std::endl;
+}
+

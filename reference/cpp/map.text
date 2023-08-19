@@ -1,0 +1,46 @@
+ ---[ Definition ]---
+
+ A std::map is an associative container in C++ that stores a collection of key-value pairs in a sorted order based on the keys.
+ It is implemented as a balanced binary search tree (usually a red-black tree) to maintain efficient insertion, deletion, and search operations.
+ Keys in a std::map are unique, and each key maps to a single value.
+
+ ---[ Header ]---
+
+#include <map>
+
+---[ Creation ]---
+
+std::map<std::string, int> Omap;
+
+---[ Inserting Key-Value Pairs ]---
+
+Omap.insert(std::make_pair("key", value));
+Omap["key"] = value;
+
+---[ Accessing Values ]---
+
+int value = Omap["key"];
+
+---[ Checking if a Key Exists ]---
+
+auto iter = Omap.find("key");
+if (iter != Omap.end()) {
+    std::cout << "Key found. Value: " << iter->second << std::endl;
+} else {
+    std::cout << "Key not found." << std::endl;
+}
+
+---[ Erasing Key-Value Pairs ]---
+
+Omap.erase("key");
+
+---[ Displaying the Size of the Map ]---
+
+std::cout << "Map size: " << Omap.size() << std::endl;
+
+---[ Clearing the Map ]---
+
+Omap.clear();
+std::cout << "Map size after clearing: " << Omap.size() << std::endl;
+
+

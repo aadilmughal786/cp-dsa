@@ -25,9 +25,9 @@ int value = umap["key1"];
 
 auto iter = umap.find("key2");
 if (iter != umap.end()) {
-std::cout << "Key found. Value: " << iter->second << std::endl;
+    std::cout << "Key found. Value: " << iter->second << std::endl;
 } else {
-std::cout << "Key not found." << std::endl;
+    std::cout << "Key not found." << std::endl;
 }
 
 ---[ Erasing Key-Value Pairs ]---

@@ -26,9 +26,9 @@ for (const auto& element : Oset) {
 
 auto iter = Oset.find(target);
 if (iter != Oset.end()) {
-std::cout << "Element " << target << " found in the set." << std::endl;
+    std::cout << "Element " << target << " found in the set." << std::endl;
 } else {
-std::cout << "Element " << target << " not found in the set." << std::endl;
+    std::cout << "Element " << target << " not found in the set." << std::endl;
 }
 
 

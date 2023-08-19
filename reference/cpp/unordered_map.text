@@ -1,0 +1,46 @@
+---[ Definition ]---
+
+An std::unordered_map is a container in C++ that stores a collection of key-value pairs in an unordered manner.
+It uses hash tables to achieve efficient insertion, deletion, and search operations.
+Unlike a std::map, which maintains elements in a specific order, an std::unordered_map does not guarantee any particular order among its elements.
+
+---[ Header ]---
+
+#include <unordered_map>
+
+---[ Creation ]---
+
+std::unordered_map<std::string, int> umap;
+
+---[ Inserting Key-Value Pairs ]---
+
+umap.insert(std::make_pair("key1", 42));
+umap["key2"] = 24;
+
+---[ Accessing Values ]---
+
+int value = umap["key1"];
+
+---[ Checking if a Key Exists ]---
+
+auto iter = umap.find("key2");
+if (iter != umap.end()) {
+std::cout << "Key found. Value: " << iter->second << std::endl;
+} else {
+std::cout << "Key not found." << std::endl;
+}
+
+---[ Erasing Key-Value Pairs ]---
+
+umap.erase("key1");
+
+---[ Displaying the Size of the Unordered Map ]---
+
+std::cout << "Unordered map size: " << umap.size() << std::endl;
+
+---[ Clearing the Unordered Map ]---
+
+umap.clear();
+std::cout << "Unordered map size after clearing: " << umap.size() << std::endl;
+
+

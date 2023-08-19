@@ -1,0 +1,42 @@
+---[ Definition ]---
+
+std::pair is a class template in C++ that represents a simple container to hold two values together as a single entity.
+It is commonly used to store a pair of related values, such as key-value pairs, coordinates, or any two values that need to be associated.
+
+---[ Header ]---
+
+#include <utility>
+
+---[ Creation ]---
+
+std::pair<int, double> myPair(42, 3.14);
+--
+std::pair<int, double> anotherPair = std::make_pair(99, 1.23);
+
+
+---[ Accessing Values ]---
+
+int firstValue = myPair.first;
+double secondValue = myPair.second;
+
+---[ Comparing Pairs ]---
+
+std::pair supports comparison operations using the standard comparison operators (==, !=, <, <=, >, >=):
+bool areEqual = myPair == anotherPair;
+bool areNotEqual = myPair != anotherPair;
+bool isLessThan = myPair < anotherPair;
+
+---[ Swapping Pairs ]---
+
+std::swap(myPair, anotherPair);
+
+---[ Using Pairs ]---
+
+std::pair is often used to return multiple values from a function or store related data together:
+std::pair<int, std::string> result = std::make_pair(42, "Hello");
+
+---[ Displaying values ]---
+
+std::cout << "First value: " << firstValue << std::endl;
+std::cout << "Second value: " << secondValue << std::endl;
+

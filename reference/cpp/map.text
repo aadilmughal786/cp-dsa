@@ -10,21 +10,21 @@
 
 ---[ Creation ]---
 
-std::map<std::string, int> Omap;
+std::map<std::string, int> oMap;
 
 ---[ Inserting Key-Value Pairs ]---
 
-Omap.insert(std::make_pair("key", value));
-Omap["key"] = value;
+oMap.insert(std::make_pair("key", value));
+oMap["key"] = value;
 
 ---[ Accessing Values ]---
 
-int value = Omap["key"];
+int value = oMap["key"];
 
 ---[ Checking if a Key Exists ]---
 
-auto iter = Omap.find("key");
-if (iter != Omap.end()) {
+auto iter = oMap.find("key");
+if (iter != oMap.end()) {
     std::cout << "Key found. Value: " << iter->second << std::endl;
 } else {
     std::cout << "Key not found." << std::endl;
@@ -32,15 +32,15 @@ if (iter != Omap.end()) {
 
 ---[ Erasing Key-Value Pairs ]---
 
-Omap.erase("key");
+oMap.erase("key");
 
 ---[ Displaying the Size of the Map ]---
 
-std::cout << "Map size: " << Omap.size() << std::endl;
+std::cout << "Map size: " << oMap.size() << std::endl;
 
 ---[ Clearing the Map ]---
 
-Omap.clear();
-std::cout << "Map size after clearing: " << Omap.size() << std::endl;
+oMap.clear();
+std::cout << "Map size after clearing: " << oMap.size() << std::endl;
 
 

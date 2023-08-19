@@ -1,0 +1,59 @@
+---[ def ]---
+
+An std::unordered_set is a container in C++ that stores a collection of unique elements in an unordered manner. It uses hash tables to achieve efficient insertion, deletion, and search operations.
+
+---[ header ]---
+
+#include <unordered_set>
+
+---[ creation ]---
+
+std::unordered_set<int> uSet;
+
+---[ Inserting element ]---
+    
+uSet.insert(element);
+
+---[ Iterating through the set ]---
+
+for (int element : uSet) {
+    std::cout << element << " ";
+}
+
+
+---[ Finding an element ]---
+
+auto iter = uSet.find(element);
+if (iter != uSet.end()) {
+    std::cout << "Element found." << std::endl;
+} else {
+    std::cout << "Element not found." << std::endl;
+}
+
+--
+
+if (uSet.count(target) > 0) {
+    std::cout << "Element " << target << " found in the set." << std::endl;
+} else {
+    std::cout << "Element " << target << " not found in the set." << std::endl;
+}
+
+---[ Erasing elements ]---
+
+uSet.erase(5);
+
+---[ Inserting a range of elements ]---
+
+std::vector<int> elementsToAdd = {7, 2, 10};
+uSet.insert(elementsToAdd.begin(), elementsToAdd.end());
+
+
+---[ Displaying the size of the set ]---
+
+std::cout << "Set size: " << uSet.size() << std::endl;
+
+---[ Clearing the set ]---
+
+uSet.clear();
+std::cout << "Set size after clearing: " << uSet.size() << std::endl;
+

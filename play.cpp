@@ -1,9 +1,11 @@
 // #include<bits/stdc++.h>
 #include <iostream>
 #include <queue>
+#include <set>
 #include <stack>
 #include <unordered_map>
 #include <unordered_set>
+
 #include <vector>
 // #include <cstring>
 // #include <array>
@@ -45,4 +47,17 @@ int main() {
 }
 
 // Let's start
-void solve() {}
+void solve() {
+  set<ll> uSet;
+
+  uSet.insert(12);
+  uSet.insert(121212);
+  uSet.insert(134342);
+  uSet.insert(121676212);
+  uSet.insert(126761212);
+  uSet.insert(120001212);
+
+  for (ll ele : uSet) {
+    cout << ele << endl;
+  }
+}

@@ -1,32 +1,53 @@
 ---[ def ]---
 
-An unordered set is a collection of unique elements, and it does not maintain any specific order among its elements.
+A set is an associative container in C++ that stores unique elements in a specific order.
+It is implemented as a balanced binary search tree (usually a red-black tree) to maintain efficient insertion, deletion, and search operations.
+Sets do not allow duplicate elements.
 
 ---[ header ]---
 
-#include <unordered_set>
+#include <set>
 
 ---[ creation ]---
 
-std::unordered_set<int> uSet;
+std::set<int> Oset;
 
----[ Inserting element ]---
-    
-uSet.insert(element);
+---[ Inserting elements ]---
+
+Oset.insert(element);
 
 ---[ Iterating through the set ]---
 
-for (int element : uSet) {
+for (const auto& element : Oset) {
     std::cout << element << " ";
 }
 
-
 ---[ Finding an element ]---
 
-auto iter = uSet.find(element);
-if (iter != uSet.end()) {
-    std::cout << "Element found." << std::endl;
+auto iter = Oset.find(target);
+if (iter != Oset.end()) {
+std::cout << "Element " << target << " found in the set." << std::endl;
 } else {
-    std::cout << "Element not found." << std::endl;
+std::cout << "Element " << target << " not found in the set." << std::endl;
 }
+
+
+---[ Erasing elements ]---
+
+Oset.erase(5);
+
+---[ Inserting a range of elements ]---
+
+std::vector<int> elementsToAdd = {7, 2, 10};
+Oset.insert(elementsToAdd.begin(), elementsToAdd.end());
+
+---[ Displaying the size of the set ]---
+
+std::cout << "Set size: " << Oset.size() << std::endl;
+
+---[ Clearing the set ]---
+
+Oset.clear();
+std::cout << "Set size after clearing: " << Oset.size() << std::endl;
+
 

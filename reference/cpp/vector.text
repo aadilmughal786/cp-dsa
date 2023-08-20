@@ -1,0 +1,50 @@
+---[ Definition ]---
+
+std::vector is a dynamic array-like container in C++ that provides dynamic size adjustment and efficient element access.
+It is part of the Standard Template Library (STL) and is widely used for storing collections of elements.
+
+---[ Header ]---
+
+#include <vector>
+
+---[ Creation ]---
+
+std::vector<T> myVector;   T is the type of elements you want to store
+
+---[ Inserting Elements ]---
+
+myVector.push_back(element);           Insert at the end
+myVector.insert(iter, element);        Insert before the specified iterator
+myVector.insert(iter, count, element);  Insert multiple copies before the iterator
+
+---[ Accessing Elements ]---
+
+You can access elements in a std::vector using the [] operator or the at method:
+T value = myVector[index];    Access by index (0-based)
+T value = myVector.at(index);  Access with bounds checking
+
+---[ Modifying Elements ]---
+
+myVector[index] = newValue;
+
+---[ Erasing Elements ]---
+
+myVector.pop_back();                 Remove the last element
+myVector.erase(iter);                Erase the element pointed to by the iterator
+myVector.erase(iterBegin, iterEnd);  Erase elements in the specified range
+
+---[ Vector Size and Capacity ]---
+
+You can obtain the number of elements in a std::vector using the size method:
+size_t size = myVector.size();
+
+You can obtain the maximum number of elements a std::vector can hold without reallocation using the capacity method:
+size_t capacity = myVector.capacity();
+
+---[ Resizing and Clearing ]---
+
+You can resize a std::vector using the resize method:
+myVector.resize(newSize);
+
+You can clear all elements from a std::vector using the clear method:
+myVector.clear();

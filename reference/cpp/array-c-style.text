@@ -1,0 +1,32 @@
+---[ Definition ]---
+
+A C-style array in C++ is a collection of elements of the same data type stored in contiguous memory locations.
+The size of the array is fixed and must be known at compile time. It provides basic array functionality but lacks many of the features of modern C++ containers.
+
+---[ Creation ]---
+
+To create a C-style array, you can use the following syntax:
+DataType arr[Size];   DataType is the type of elements, and Size is the number of elements in the array
+
+---[ Initializing Elements ]---
+
+You can initialize elements in a C-style array using braces during creation:
+int numbers[5] = {1, 2, 3, 4, 5};
+
+---[ Accessing Elements ]---
+
+You can access elements in a C-style array using the [] operator:
+DataType value = arr[index];    Access by index (0-based)
+
+---[ Modifying Elements ]---
+
+You can modify elements in a C-style array using the [] operator:
+arr[index] = newValue;
+
+---[ Array Size ]---
+
+The size of a C-style array is determined at compile time and is fixed:
+const int size = 10;   Declare a constant for array size
+DataType arr[size];    Declare an array of specified size
+
+

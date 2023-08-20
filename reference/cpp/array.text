@@ -1,0 +1,35 @@
+---[ Definition ]---
+
+std::array is a fixed-size array-like container in C++ that provides efficient element access and doesn't require dynamic memory allocation.
+It is part of the Standard Template Library (STL) and is useful for cases where the array size is known at compile time.
+
+---[ Header ]---
+
+#include <array>
+
+---[ Creation ]---
+
+To create a std::array, you can use the following syntax:
+std::array<T, N> myArray;   T is the type of elements and N is the size of the array
+
+---[ Initializing Elements ]---
+
+You can initialize elements in a std::array during creation using braces:
+std::array<int, 3> myArray = {10, 20, 30};
+
+---[ Accessing Elements ]---
+
+You can access elements in a std::array using the [] operator or the at method:
+T value = myArray[index];    Access by index (0-based)
+T value = myArray.at(index);  Access with bounds checking
+
+---[ Modifying Elements ]---
+
+You can modify elements in a std::array using the [] operator or the at method:
+myArray[index] = newValue;
+
+---[ Array Size ]---
+
+You can obtain the number of elements in a std::array using the size method:
+size_t size = myArray.size();
+

@@ -1,0 +1,51 @@
+---[ Definition ]---
+
+std::bitset is a class template in C++ that represents a fixed-size sequence of bits.
+It is often used for compactly storing and manipulating a collection of boolean flags or representing small sets of integers.
+Each bit in the std::bitset can be either 0 or 1.
+
+---[ Header ]---
+
+#include <bitset>
+
+---[ Creation ]---
+
+std::bitset<N> myBitset;   -> N is the number of bits in the bitset
+
+---[ Initializing Bits ]---
+
+std::bitset<8> bits1;          Default-initialized to all zeros
+std::bitset<8> bits2(0b1010);  Initialize using a binary literal
+std::bitset<8> bits3("1100");  Initialize using a string of '0's and '1's
+
+---[ Accessing and Modifying Bits ]---
+
+You can access and modify individual bits in a std::bitset using the [] operator:
+bool value = myBitset[3];    Access the fourth bit (0-based index)
+myBitset[2] = true;          Set the third bit to 1
+
+---[ Bitwise Operations ]---
+
+std::bitset<N> result = myBitset1 & myBitset2;   Bitwise AND
+result = myBitset1 | myBitset2;                 Bitwise OR
+result = myBitset1 ^ myBitset2;                 Bitwise XOR
+result = ~myBitset1;                            Bitwise NOT
+
+---[ Counting and Flipping Bits ]---
+
+You can count the number of set bits (1s) in a std::bitset using the count method:
+size_t count = myBitset.count();
+
+Flipping all bits in a std::bitset can be done using the flip method:
+myBitset.flip();   Inverts all the bits
+
+---[ Converting to Other Types ]---
+
+You can convert a std::bitset to an unsigned long long integer using the to_ullong method:
+unsigned long long value = myBitset.to_ullong();
+
+---[ Displaying the Bitset ]---
+
+You can convert a std::bitset to a string representation using the to_string method:
+std::string bitString = myBitset.to_string();
+

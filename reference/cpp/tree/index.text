@@ -1,0 +1,31 @@
+---[ Definition ]---
+
+A tree is a hierarchical data structure that consists of nodes connected by edges.
+Each node has a value and can have zero or more child nodes.
+The topmost node is called the root, and nodes with no children are called leaves.
+
+---[ Header ]---
+
+The C++ Standard Library does not provide a built-in tree data structure.
+Trees are typically implemented as user-defined classes or structures.
+
+---[ Common Terminology ]---
+
+- Root: The topmost node in the tree.
+- Parent: A node that has one or more child nodes.
+- Child: A node that has a parent node.
+- Sibling: Nodes with the same parent.
+- Leaf: A node with no children.
+- Depth: The level of a node in the tree (root's depth is 0).
+- Height: The length of the longest path from a node to a leaf (root's height is tree's height).
+
+---[ Types of Trees ]---
+
+1. Binary Tree: A tree where each node has at most two children, typically called the left child and the right child.
+
+2. Binary Search Tree (BST): A binary tree where the left child of a node has a value less than or equal to the node's value,
+and the right child of a node has a value greater than the node's value.
+
+3. AVL Tree: A self-balancing binary search tree where the heights of the two child subtrees of any node differ by at most one.
+
+4. Red-Black Tree: A self-balancing binary search tree with properties that ensure relatively balanced structure.

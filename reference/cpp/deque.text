@@ -1,0 +1,38 @@
+---[ Definition ]---
+
+std::deque (pronounced "deck") is a container in C++ that provides a double-ended queue, allowing efficient insertion and deletion at both ends.
+It is part of the Standard Template Library (STL) and provides dynamic sizing similar to std::vector but also supports efficient insertions and deletions at the front.
+
+---[ Header ]---
+
+#include <deque>
+
+---[ Creation ]---
+
+To create a std::deque, you can use the following syntax:
+std::deque<T> myDeque;   T is the type of elements you want to store
+
+---[ Pushing and Popping Elements ]---
+
+myDeque.push_back(element);
+myDeque.push_front(element);
+
+--
+
+myDeque.pop_back();
+myDeque.pop_front();
+
+---[ Accessing Elements ]---
+
+You can access elements in a std::deque using the [] operator or the at method:
+T value = myDeque[index];    Access by index (0-based)
+T value = myDeque.at(index);  Access with bounds checking
+
+---[ Modifying Elements ]---
+
+myDeque[index] = newValue;
+
+---[ Deque Size ]---
+
+size_t size = myDeque.size();
+

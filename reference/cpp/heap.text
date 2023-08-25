@@ -1,0 +1,38 @@
+---[ Definition ]---
+
+A heap is a specialized binary tree-based data structure that satisfies the heap property.
+In a max heap, the parent node is always greater than or equal to its child nodes.
+In a min heap, the parent node is always smaller than or equal to its child nodes.
+
+---[ Header ]---
+
+#include <algorithm>  For std::make_heap, std::push_heap, std::pop_heap, std::sort_heap
+
+---[ Creating a Heap ]---
+
+You can create a heap from a range of elements using std::make_heap:
+std::vector<T> myVector = {9, 3, 7, 5, 1};
+std::make_heap(myVector.begin(), myVector.end());  Creates a max heap
+
+---[ Inserting Elements ]---
+
+myVector.push_back(newElement);
+std::push_heap(myVector.begin(), myVector.end());
+
+---[ Removing Elements ]---
+
+To remove the largest element (for max heap) or the smallest element (for min heap), use std::pop_heap:
+std::pop_heap(myVector.begin(), myVector.end());
+myVector.pop_back();
+
+---[ Accessing Top Element ]---
+
+The largest element (for max heap) or the smallest element (for min heap) is always at the top:
+T topElement = myVector.front();
+
+---[ Sorting Using Heap ]---
+
+You can sort a range of elements using std::sort_heap:
+std::sort_heap(myVector.begin(), myVector.end());  Sorting in ascending order
+
+

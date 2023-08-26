@@ -1,0 +1,35 @@
+---[ Definition ]---
+
+std::queue is a container adapter in C++ that provides a First-In-First-Out (FIFO) data structure, also known as a queue.
+It is part of the Standard Template Library (STL) and is implemented using other container classes, like std::deque or std::list.
+
+---[ Header ]---
+
+#include <queue>
+
+---[ Creation ]---
+
+To create a std::queue, you can use the following syntax:
+std::queue<T> myQueue;   T is the type of elements you want to store
+
+---[ Pushing and Popping Elements ]---
+
+myQueue.push(element);
+myQueue.pop();
+
+---[ Accessing the Front Element ]---
+
+T frontElement = myQueue.front();
+
+---[ Accessing the Back Element ]---
+
+T backElement = myQueue.back();
+
+---[ Checking if the Queue is Empty ]---
+
+bool isEmpty = myQueue.empty();
+
+---[ Size of the Queue ]---
+
+size_t size = myQueue.size();
+

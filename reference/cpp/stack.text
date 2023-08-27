@@ -1,0 +1,31 @@
+---[ Definition ]---
+
+std::stack is a container adapter in C++ that provides a Last-In-First-Out (LIFO) data structure, also known as a stack.
+It is part of the Standard Template Library (STL) and is implemented using other container classes, like std::deque or std::vector.
+
+---[ Header ]---
+
+#include <stack>
+
+---[ Creation ]---
+
+std::stack<T> myStack;   T is the type of elements you want to store
+
+---[ Pushing and Popping Elements ]---
+
+myStack.push(element);
+myStack.pop();
+
+---[ Accessing the Top Element ]---
+
+T topElement = myStack.top();
+
+---[ Checking if the Stack is Empty ]---
+
+bool isEmpty = myStack.empty();
+
+---[ Size of the Stack ]---
+
+size_t size = myStack.size();
+
+

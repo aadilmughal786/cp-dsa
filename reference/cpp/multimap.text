@@ -1,0 +1,34 @@
+---[ Definition ]---
+
+std::multimap is a container in C++ that stores key-value pairs in a sorted order based on the keys.
+It allows duplicate keys and maintains a sorted sequence of elements based on keys.
+It is part of the Standard Template Library (STL) and is implemented using a balanced binary search tree.
+
+---[ Header ]---
+
+#include <map>
+
+---[ Creation ]---
+
+std::multimap<Key, T> myMultimap;   Key is the type of keys and T is the type of values
+
+---[ Inserting Elements ]---
+
+myMultimap.insert(std::make_pair(key, value));
+
+---[ Removing Elements ]---
+
+myMultimap.erase(key);            Removes all pairs with the specified key
+myMultimap.erase(iterator);       Removes the pair pointed by the iterator
+
+---[ Finding Elements ]---
+
+auto range = myMultimap.equal_range(key);
+for (auto it = range.first; it != range.second; ++it) {
+    Access the pairs with the specified key
+}
+
+---[ Multimap Size ]---
+
+You can obtain the number of key-value pairs in the multimap using the size method:
+size_t size = myMultimap.size();

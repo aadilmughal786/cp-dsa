@@ -1,0 +1,33 @@
+---[ Definition ]---
+
+std::multiset is a container in C++ that stores multiple instances of elements in a sorted order.
+It allows duplicate elements and maintains a sorted sequence of elements.
+It is part of the Standard Template Library (STL) and is implemented using a balanced binary search tree.
+
+---[ Header ]---
+
+#include <set>
+
+---[ Creation ]---
+
+std::multiset<T> myMultiset;   T is the type of elements you want to store
+
+---[ Inserting Elements ]---
+
+myMultiset.insert(element);
+
+---[ Removing Elements ]---
+
+myMultiset.erase(element);       Removes all instances of the element
+myMultiset.erase(iterator);      Removes the element pointed by the iterator
+
+---[ Counting Elements ]---
+
+You can count the number of occurrences of an element in the multiset using the count method:
+int count = myMultiset.count(element);
+
+---[ Multiset Size ]---
+
+You can obtain the number of elements in the multiset using the size method:
+size_t size = myMultiset.size();
+

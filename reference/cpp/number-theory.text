@@ -1,0 +1,143 @@
+1. Prime Numbers:
+- A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself.
+
+2. Sieve of Eratosthenes:
+- An algorithm to find all prime numbers up to a given limit efficiently.
+
+3. GCD (Greatest Common Divisor):
+- The largest positive integer that divides two or more integers without leaving a remainder.
+- std::gcd(a, b) computes the GCD of integers a and b.
+
+4. LCM (Least Common Multiple):
+- The smallest positive integer that is divisible by two or more given integers.
+- LCM(a, b) = (a * b) / GCD(a, b).
+
+5. Modular Arithmetic:
+- Operations (addition, subtraction, multiplication, division) performed on remainders.
+- Modulo operator (%) computes the remainder of division.
+- Modular exponentiation: (a^b) % mod.
+
+6. Fermat's Little Theorem:
+- If p is a prime and a is coprime to p, then a^(p-1) % p = 1.
+
+7. Euler's Totient Function (Phi function):
+- Counts the positive integers up to a given integer n that are coprime with n.
+- If n is prime, phi(n) = n - 1. If n is a product of primes, phi(n) = n * (1 - 1/p1) * (1 - 1/p2) * ...
+
+8. Modulo Inverse:
+- For a and mod m, find x such that (a * x) % m = 1.
+- Requires using the Extended Euclidean Algorithm.
+
+9. Chinese Remainder Theorem (CRT):
+- Solves a system of simultaneous congruences modulo pairwise coprime moduli.
+
+10. Extended Euclidean Algorithm:
+    - Finds integers x and y such that ax + by = gcd(a, b).
+    - Used for solving linear Diophantine equations and finding modulo inverses.
+
+11. Divisor Count:
+    - Count the number of divisors of an integer n.
+    - If n = p1^a1 * p2^a2 * ..., the number of divisors = (a1 + 1) * (a2 + 1) * ...
+
+12. Factorial and Permutations:
+    - n! = n * (n - 1) * (n - 2) * ... * 1.
+
+13. Combinations (nCr):
+    - nCr = n! / (r! * (n - r)!).
+
+14. Prime Factorization:
+    - Decomposing an integer into a product of prime numbers.
+    - Example: 28 = 2^2 * 7.
+
+15. Mobius Function:
+    - μ(n) is 0 if n has a squared prime factor, -1 if n has an odd number of prime factors, and 1 if n has an even number of prime factors.
+
+16. Euler's Phi Function:
+    - φ(n) counts the positive integers up to n that are coprime with n.
+    - φ(p) = p - 1 for prime p, φ(p^k) = p^k - p^(k-1) for prime p.
+
+17. Totient Sum:
+    - Sum of φ(i) for all i in [1, n].
+
+18. Wilson's Theorem:
+    - (p - 1)! % p = p - 1 if p is prime.
+
+19. Divisibility Rules:
+    - Rules to quickly determine if a number is divisible by certain small integers.
+
+20. Catalan Numbers:
+    - A sequence of natural numbers that have various combinatorial interpretations.
+
+21. Lucas Theorem:
+    - Extension of binomial theorem to modular arithmetic.
+
+22. Primality Testing:
+    - Algorithms to check if a number is prime.
+    - Examples: Sieve of Eratosthenes, Miller-Rabin primality test.
+
+23. Fast Exponentiation:
+    - Efficiently compute a^n % mod using binary exponentiation.
+
+24. Number of Digits:
+    - The number of digits in a decimal representation of an integer n is floor(log10(n)) + 1.
+
+25. Palindrome Number:
+    - A number that reads the same forwards and backwards.
+
+26. Trailing Zeros in Factorial:
+    - The number of trailing zeros in n! is the highest power of 5 that divides n!.
+
+27. Euclidean Algorithm for GCD:
+    - An algorithm to find the greatest common divisor of two integers a and b.
+
+28. Bezout's Identity:
+    - For integers a and b, there exist integers x and y such that ax + by = gcd(a, b).
+
+
+--------------------
+
+1. Even and Odd Numbers:
+   - Even numbers are divisible by 2; odd numbers are not.
+
+2. Divisibility Rules:
+   - Divisibility by 2, 3, 4, 5, 6, 9, 10, powers of 10.
+
+3. Prime Numbers:
+   - Prime numbers have exactly 2 distinct divisors.
+
+4. Prime Factorization:
+   - Every integer can be expressed as a product of primes.
+
+5. Relative Prime (Coprime) Numbers:
+   - GCD of coprime numbers is 1.
+
+6. Modular Arithmetic:
+   - Properties of addition, subtraction, multiplication, division.
+
+7. Fermat's Little Theorem:
+   - a^(p-1) % p = 1 if a is coprime to p.
+
+8. Euler's Totient Function:
+   - φ(n) counts coprime numbers up to n.
+
+9. Binomial Coefficients:
+   - C(n, r) represents ways to choose r from n.
+
+10. Catalan Numbers:
+    - Various interpretations in counting problems.
+
+11. Number of Divisors:
+    - Factors of n = product of (exponent + 1).
+
+12. Properties of Squares and Cubes:
+    - Even squares are even; odd squares are odd.
+    - Even cubes are even; odd cubes are odd.
+
+13. Perfect Squares and Perfect Cubes:
+    - Squares and cubes of integers.
+
+14. Digit Sum and Digital Root:
+    - Sum of digits; repeated sum for digital root.
+
+15. Pigeonhole Principle:
+    - Distribution of objects into containers.

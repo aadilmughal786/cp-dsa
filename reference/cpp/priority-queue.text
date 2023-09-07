@@ -1,0 +1,33 @@
+---[ Definition ]---
+
+std::priority_queue is a container adapter in C++ that provides a priority queue data structure.
+It is part of the Standard Template Library (STL) and is implemented using a heap.
+
+---[ Header ]---
+
+#include <queue>
+
+---[ Creation ]---
+
+To create a std::priority_queue, you can use the following syntax:
+std::priority_queue<T> myPriorityQueue;   T is the type of elements you want to store
+
+---[ Inserting Elements ]---
+
+myPriorityQueue.push(element);
+
+---[ Accessing the Top Element ]---
+
+T topElement = myPriorityQueue.top();
+
+---[ Removing the Top Element ]---
+
+myPriorityQueue.pop();
+
+---[ Priority Queue with Custom Comparator ]---
+
+You can create a priority queue with a custom comparator function for ordering elements:
+auto comparator = [](const T& a, const T& b) { return a > b; };  Custom max heap comparator
+std::priority_queue<T, std::vector<T>, decltype(comparator)> customPriorityQueue(comparator);
+
+

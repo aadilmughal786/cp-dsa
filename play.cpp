@@ -51,7 +51,7 @@ void solve() {
   set<ll> uSet;
 
   uSet.insert(12);
-  uSet.insert(121212);
+  uSet.insert(1212);
   uSet.insert(134342);
   uSet.insert(121676212);
   uSet.insert(126761212);
